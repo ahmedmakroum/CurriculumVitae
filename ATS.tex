@@ -1,0 +1,181 @@
+    \documentclass[12pt,a4paper,sans]{moderncv}
+    \moderncvstyle{banking}
+    \moderncvcolor{black}
+    \nopagenumbers{}
+
+    \usepackage[utf8]{inputenc}
+    \usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry} % standard margins
+    \usepackage{ragged2e}
+    \usepackage{multicol}
+    \usepackage{enumitem}
+    \usepackage{amssymb}
+    \usepackage{fontawesome5}
+    \usepackage{xcolor}
+    \usepackage{hyperref}
+    \hypersetup{colorlinks=true, urlcolor=blue}
+
+
+    % Custom cventry
+    \newcommand*{\customcventry}[7][.10em]{%
+    \begin{tabular}{@{}l}
+        {\bfseries #4} \\
+        {\itshape #3}
+    \end{tabular}
+    \hfill
+    \begin{tabular}{l@{}}
+        {\bfseries #5} \\
+        {\itshape #2}
+    \end{tabular}
+    \ifx&#7&%
+    \else{\\
+    \begin{minipage}{\maincolumnwidth}%
+        \footnotesize#7%
+    \end{minipage}}\fi%
+    \par\addvspace{#1}
+    }
+
+    \begin{document}
+
+    % Ultra-compact header block
+    \begin{center}
+        {\fontsize{18}{20}\selectfont\textbf{Ahmed MAKROUM}} \\
+        \vspace{0.3em}
+        \footnotesize Data Engineer and Full-Stack Web/Mobile Developer \\
+        \vspace{0.3em}
+        {\normalsize
+            \faMobile\enspace +212 6 64 71 52 19 \quad
+            \faEnvelope\enspace ahmedmakroum3@gmail.com \quad
+            \faHome\enspace Casablanca, Morocco \\
+            \faLinkedin\enspace \href{https://www.linkedin.com/in/ahmed-makroum/}{in/ahmedmakroum} \quad
+            \faGithub\enspace \href{https://github.com/ahmedmakroum}{github.com/ahmedmakroum} \quad
+            \faGlobe\enspace \href{https://ahmedmakroum.github.io/AhmedMakroumPortfolio/}{makroum.me}
+        }
+    \end{center}
+
+    % PROFILE
+\section{Profile}
+\justifying
+Results-driven Computer and Network Engineer (MIAGE: Applied Methods for Business Management) with a strong foundation in software engineering, data engineering, and full-stack development. Adept at building robust data pipelines, developing scalable web/mobile applications, and leveraging cloud and open-source technologies. Recognized for adaptability, teamwork, and a passion for continuous learning.
+\vspace{1em}
+
+
+%EXP%
+    \section{Experience}
+
+    \customcventry{03/2025 ‐ Present}{\href{https://www.allianz.ma}{Allianz Maroc}}{Data Engineer}{}{}{
+    \begin{itemize}[leftmargin=0.5cm, itemsep=0pt, topsep=0pt]
+    \item Designed and deployed end-to-end data pipelines using NiFi and Spark to extract, clean, and load data from internal insurance systems.
+    \item Consolidated fragmented sources into a PostgreSQL warehouse, enabling unified and consistent reporting.
+    \item Delivered real-time dashboards with Metabase, improving data accessibility for business users.
+    \item Currently developing and maintaining a web application to manage and track healthcare payments issued by Allianz to external providers, using Spring Boot and Next.js.
+    \end{itemize}}
+
+    \customcventry{06/2024 ‐ 08/2024}{\href{https://boti.education/}{BOTI School}}{Data Engineer}{}{}{
+    \begin{itemize}[leftmargin=0.8cm, itemsep=0pt, topsep=0pt]
+    \item Developed a scalable ETL pipeline using Apache Beam on Google Cloud to process learning activity logs.
+    \item Transformed raw data into structured datasets, enabling clear insights into user behavior and engagement.
+    \item Delivered automated reporting through Looker dashboards for the executive team.
+    \end{itemize}}
+
+    \customcventry{06/2023 ‐ 08/2023}{\href{https://6solutions.com/}{6solutions}}{Web and Mobile Developer}{}{}{
+    \begin{itemize}[leftmargin=0.8cm, itemsep=0pt, topsep=0pt]
+    \item Developed a cross-platform consulting platform for legal, medical, and financial services.
+    \item Built the web frontend using Angular and the backend using Spring Boot.
+    \item Designed and deployed the mobile app in Flutter, enhancing service accessibility for end users.
+    \end{itemize}}
+
+    \customcventry{07/2022 ‐ 08/2022}{\href{https://estatmar.ma/}{Finso}}{Game Developer}{}{}{
+    \begin{itemize}[leftmargin=0.8cm, itemsep=0pt, topsep=0pt]
+    \item Designed and developed an educational mobile game for children using Unity.
+    \item Created interactive gameplay focused on learning through play.
+    \item Strengthened UX and animation logic in a real-world release context.
+    \end{itemize}}
+
+    % PROJECTS
+    \section{Projects}
+    \vspace{0.5em}
+    \begin{itemize}[leftmargin=0.7cm, itemsep=2pt, topsep=2pt]
+        \item \textbf{Moroccan Consulting Platform} (\href{https://6solutions.ma/}{6solutions}) – Led the development of a full-stack platform connecting users to legal, medical, and financial experts. Built with React, Flutter, Node.js, and PostgreSQL. \textit{Impact: Enabled 1000+ consultations in the first 3 months.}
+        \item \textbf{Insurance Data Pipeline} (\href{https://www.allianz.ma/}{Allianz Maroc}) – Designed and deployed robust ETL pipelines using Apache NiFi and Spark to unify and expose insurance data for analytics and reporting.
+        \item \textbf{Educational Game for Children} (\href{https://finso.ma/}{Finso}) – Developed a Unity-based mobile game to teach children basic math and logic through interactive play. \textit{Result: 500+ downloads in the first month.}
+        \item \textbf{Cloud ETL for Learning Data} (\href{https://www.botischool.com/}{BOTI School}) – Built a scalable ETL pipeline on Google Cloud with Apache Beam, transforming and storing large-scale educational data for analytics.
+        \item \textbf{Personal Portfolio Website} (\href{https://ahmedmakroum.github.io/AhmedMakroumPortfolio/}{makroum.me}) – Designed and deployed a modern, responsive portfolio to showcase projects and skills. Built with Next.js and hosted on GitHub Pages.
+    \end{itemize}
+
+
+
+    % EDUCATION
+    \vspace{-3mm}
+    \section{Education}
+
+\customcventry
+    {2020 -- 2025}
+    {\href{https://emsi.ma}{\textbf{EMSI – École Marocaine des Sciences de l’Ingénieur}}}
+    {Master's in Software Engineering and Networks – MIAGE\\(Applied Methods for Business Management)}
+    {}{}{}}
+
+    \customcventry
+        {Jul. 2024 ‐ Sep. 2024}
+        {\href{https://www.alxafrica.com}{\textbf{ALX Academy}}}
+        {Associate's Degree in Artificial Intelligence and Prompt Engineering}
+        {}{}{
+        \begin{itemize}[leftmargin=0.5cm, itemsep=0pt, topsep=0pt]
+            \item ALX AiCE – AI Career Essentials
+        \end{itemize}
+        }
+
+
+
+
+    % CERTIFICATIONS
+    \section{Certifications}
+    \textit{All certificates below were earned via Coursera.}
+    \begin{itemize}[leftmargin=0.7cm, itemsep=2pt, topsep=2pt]
+        \item \textbf{\href{https://www.coursera.org/account/accomplishments/verify/G178XXP17WQA}{Machine Learning with Python}} (IBM)
+        \item \textbf{\href{https://www.coursera.org/account/accomplishments/records/M5RKGX36BAVA}{IBM Data Engineering}} (IBM)
+        \item \textbf{\href{https://www.coursera.org/account/accomplishments/verify/2QK7QK7QK7QK}{Google Business Intelligence}} (Google)
+        \item \textbf{\href{https://google.com}{Building Scalable Java Microservices with Spring Boot and Spring Cloud}} (Google Cloud)
+        \item \textbf{\href{https://www.coursera.org/account/accomplishments/verify/EK5SJM3YM7PX}{Introduction to Big Data with Spark and Hadoop}} (IBM)
+        \item \textbf{\href{https://www.coursera.org/account/accomplishments/specialization/B4RCUAYCUG49}{Python for Everybody Specialization}} (University of Michigan)
+    \end{itemize}
+
+
+
+    \section{Skills}
+    \begin{itemize}[leftmargin=0.5cm, itemsep=0pt, topsep=0pt]
+    \item \textbf{Data Engineering:} ETL, Apache NiFi, Spark, Beam, PostgreSQL, GCP
+    \item \textbf{Programming:} C, Python (pandas, FastAPI), SQL (PostgreSQL, MySQL), Java, TypeScript, 
+    \item \textbf{Web/Mobile Dev:} React, Next.js, Flutter, Spring boot, REST APIs
+    \item \textbf{DevOps:} Agility, Docker, Kubernetes, Git, GitLab CI/CD, Linux
+    \item \textbf{Visualization:} Metabase, Superset, Power BI
+    \item \textbf{Soft Skills:} Teamwork, Communication, Adaptation, Problem Solving
+    \end{itemize}
+
+    % EXTRACURRICULAR ACTIVITIES
+    \section{Extracurricular Activities}
+Managed Gaming event logistics and sponsor relationships for the F\&G EMSI club. Strengthened partnerships, increased visibility, and enhanced my communication and negotiation skills.
+
+    % LANGUAGES
+    \section{Languages}
+    \begin{multicols}{2}
+    \begin{itemize}[leftmargin=0.7cm, itemsep=2pt, topsep=2pt]
+        \item \textbf{English} – Fluent
+        \item \textbf{French} – Fluent
+        \item \textbf{Arabic} – Native
+        \item \textbf{Spanish} – Basic
+    \end{itemize}
+    \end{multicols}
+
+
+
+    % FOOTER
+\vspace{1em}
+\begin{center}
+    {\footnotesize\color{gray}
+    To learn more about my projects and skills, feel free to check out my~
+    \faLinkedin~\href{https://www.linkedin.com/in/ahmed-makroum/}{LinkedIn}~or~\faGithub~\href{https://github.com/ahmedmakroum}{GitHub}.}
+\end{center}
+
+
+
+    \end{document}
