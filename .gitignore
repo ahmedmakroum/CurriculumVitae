@@ -1,0 +1,15 @@
+# Ignore all images in the images folder
+images/*
+
+# Optionally ignore common image formats anywhere
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.svg
+*.webp
+
+# Do not ignore .gitkeep or README files in images
+!images/.gitkeep
+!images/README*
