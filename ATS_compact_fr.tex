@@ -1,0 +1,164 @@
+\documentclass[10pt,a4paper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{black}
+\nopagenumbers{}
+
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[top=0.2cm, bottom=0.2cm, left=0.3cm, right=0.3cm]{geometry}
+\usepackage{ragged2e}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, urlcolor=blue}
+
+% Définition d'entrée personnalisée
+\newcommand*{\customcventry}[7][.10em]{%
+\begin{tabular}{@{}l}
+    {\bfseries #4} \\
+    {\itshape #3}
+\end{tabular}
+\hfill
+\begin{tabular}{l@{}}
+    {\bfseries #5} \\
+    {\itshape #2}
+\end{tabular}
+\ifx&#7&%
+\else{\\
+\begin{minipage}{\maincolumnwidth}%
+    \footnotesize#7%
+\end{minipage}}\fi%
+\par\addvspace{#1}
+}
+
+\begin{document}
+
+% En-tête ultra-compact
+\begin{center}
+    {\fontsize{18}{20}\selectfont\textbf{Ahmed MAKROUM}} \\
+    \vspace{0.05em}
+    \footnotesize Ingénieur Data et Développeur Full-Stack Web/Mobile \\
+    \vspace{0.05em}
+    {\normalsize
+        \faMobile\enspace +212 664715219 \quad
+        \faEnvelope\enspace ahmedmakroum3@gmail.com \quad
+        \faHome\enspace Casablanca, Maroc \\
+        \faLinkedin\enspace \href{https://www.linkedin.com/in/ahmed-makroum/}{in/ahmedmakroum} \quad
+        \faGithub\enspace \href{https://github.com/ahmedmakroum}{github.com/ahmedmakroum} \quad
+        \faGlobe\enspace \href{https://ahmedmakroum.github.io/AhmedMakroumPortfolio/}{makroum.me}
+    }
+\end{center}
+\vspace{-18pt}
+
+% PROFIL
+\section{Profil}
+\vspace{-6pt}
+\justifying
+Ingénieur en informatique et réseaux (MIAGE : Méthodes Informatiques Appliquées à la Gestion des Entreprises), avec une solide expertise en génie logiciel, data engineering et développement full-stack. Spécialisé dans la construction de pipelines de données robustes, le développement d’applications web/mobile évolutives et l’intégration de technologies cloud et open source. Apprécié pour sa polyvalence, son esprit d’équipe et sa curiosité continue.
+
+% EXPÉRIENCE
+\vspace{-15pt}
+\section{Expérience}
+
+\customcventry{03/2025 ‐ Aujourd’hui}{\href{https://www.allianz.ma}{Allianz Maroc}}{Ingénieur Data}{}{}{
+\begin{itemize}[leftmargin=0.5cm, itemsep=0pt, topsep=0pt, label=\textcolor{black}{\fontsize{13}{15}\selectfont$\bullet$}]
+\item Conception et déploiement de pipelines de données (NiFi, Spark) pour l’extraction, le nettoyage et le chargement depuis les systèmes d’assurance internes.
+\item Intégration de sources fragmentées dans un entrepôt PostgreSQL pour un reporting unifié.
+\item Création de dashboards temps réel avec Metabase, facilitant l’accès aux données pour les utilisateurs métiers.
+\item Développement et maintenance d'une application web de gestion des règlements de santé (Spring Boot, Next.js).
+\end{itemize}}
+
+\customcventry{06/2024 ‐ 08/2024}{\href{https://boti.education/}{BOTI School}}{Ingénieur Data}{}{}{
+\begin{itemize}[leftmargin=0.8cm, itemsep=0pt, topsep=0pt, label=\textcolor{black}{\fontsize{13}{15}\selectfont$\bullet$}]
+\item Développement d’un pipeline ETL scalable avec Apache Beam sur Google Cloud.
+\item Transformation des logs d’activité en données structurées pour une meilleure analyse comportementale.
+\item Production de dashboards automatisés via Looker à destination de la direction.
+\end{itemize}}
+
+\customcventry{06/2023 ‐ 08/2023}{\href{https://6solutions.com/}{6solutions}}{Développeur Web et Mobile}{}{}{
+\begin{itemize}[leftmargin=0.8cm, itemsep=0pt, topsep=0pt, label=\large\textbullet]
+\item Développement d’une plateforme de consulting multi-services (juridique, médical, financier).
+\item Front-end réalisé avec Angular, back-end avec Spring Boot.
+\item Conception et déploiement de l’application mobile en Flutter.
+\end{itemize}}
+
+\customcventry{07/2022 ‐ 08/2022}{\href{https://estatmar.ma/}{Finso}}{Développeur de jeux}{}{}{
+\begin{itemize}[leftmargin=0.8cm, itemsep=0pt, topsep=0pt, label=\large\textbullet]
+\item Création d’un jeu éducatif pour enfants sous Unity.
+\item Conception de gameplay interactif centré sur l’apprentissage.
+\item Optimisation de l’expérience utilisateur et des animations dans un contexte de production réel.
+\end{itemize}}
+
+% FORMATION
+\vspace{-12pt}
+\section{Formation}
+
+\customcventry
+    {2020 -- 2025}
+    {\href{https://emsi.ma}{\textbf{EMSI – École Marocaine des Sciences de l’Ingénieur}}}
+    {Master en Ingénierie Logicielle et Réseaux – MIAGE (Méthodes Informatiques Appliquées à la Gestion des Entreprises)}
+    {}{}{}
+
+\customcventry
+    {Juil. 2024 ‐ Sep. 2024}
+    {\href{https://www.alxafrica.com}{\textbf{ALX Academy}}}
+    {Diplôme associé en Intelligence Artificielle et Prompt Engineering}
+    {}{}{
+    \begin{itemize}[leftmargin=0.5cm, itemsep=0pt, topsep=0pt]
+        \item ALX AiCE – Fondamentaux de l’IA et des modèles génératifs
+    \end{itemize}
+    }
+
+% CERTIFICATIONS
+\vspace{-16pt}
+\section{Certifications}
+\vspace{-2pt}
+\textit{All certificates below were earned via Coursera.}
+\begin{itemize}[leftmargin=0.5cm, itemsep=0pt, topsep=0pt]
+    \item \textbf{\href{https://www.coursera.org/account/accomplishments/verify/G178XXP17WQA}{Machine Learning with Python}} (IBM)
+    \item \textbf{\href{https://www.coursera.org/account/accomplishments/records/M5RKGX36BAVA}{IBM Data Engineering}} (IBM)
+    \item \textbf{\href{https://google.com}{Building Scalable Java Microservices with Spring Boot and Spring Cloud}} (Google Cloud)
+    \item \textbf{\href{https://www.coursera.org/account/accomplishments/verify/EK5SJM3YM7PX}{Introduction to Big Data with Spark and Hadoop}} (IBM)
+    \item \textbf{\href{https://www.coursera.org/account/accomplishments/specialization/B4RCUAYCUG49}{Python for Everybody Specialization}} (University of Michigan)
+    \item \textbf{\href{https://www.coursera.org/account/accomplishments/records/G867SJLRFQS2}{Google Business Intelligence}} (Google)
+\end{itemize}
+
+% ACTIVITÉS EXTRA
+\vspace{-12pt}
+\section{Activités extra-professionnelles}
+\vspace{-2pt}
+\textbf{Responsable Partenariats et Gaming – Club F\&G EMSI} \\
+Gestion des partenariats sponsorisés et organisation logistique des événements gaming. Renforcement de la visibilité du club et développement des compétences en négociation et communication.
+
+% COMPÉTENCES
+\vspace{-14pt}
+\section{Compétences}
+\vspace{-2pt}
+\begin{itemize}[leftmargin=0.5cm, itemsep=0pt, topsep=0pt]
+\item \textbf{Data Engineering :} ETL, Apache NiFi, Spark, Beam, PostgreSQL, GCP, AWS
+\item \textbf{Programmation :} C, Python (pandas, FastAPI), SQL (PostgreSQL, MySQL), Java, TypeScript
+\item \textbf{Développement Web/Mobile :} React, Next.js, Flutter, Spring Boot, APIs REST
+\item \textbf{DevOps :} Méthodologies agiles, Docker, Kubernetes, Git, GitLab CI/CD, Linux
+\item \textbf{Visualisation de données :} Metabase, Superset, Power BI
+\item \textbf{Compétences humaines :} Travail en équipe, Communication, Adaptabilité, Résolution de problèmes
+\end{itemize}
+
+% LANGUES
+\vspace{-15pt}
+\section{Langues}
+\vspace{-15pt}
+\begin{multicols}{2}
+\begin{itemize}[leftmargin=0.3cm, itemsep=0pt, topsep=0pt]
+    \item \textbf{Français} – Courant
+    \item \textbf{Anglais} – Courant
+    \item \textbf{Arabe} – Langue maternelle
+    \item \textbf{Espagnol} – Notions
+\end{itemize}
+\end{multicols}
+
+\vspace{-8pt}
+\end{document}
