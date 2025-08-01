@@ -1,10 +1,11 @@
+
 \documentclass[10pt,a4paper,sans]{moderncv}
 \moderncvstyle{banking}
 \moderncvcolor{black}
 \nopagenumbers{}
 
 \usepackage[utf8]{inputenc}
-\usepackage[top=0.15cm, bottom=0.05cm, left=0.25cm, right=0.25cm]{geometry}
+\usepackage[top=0.50cm, bottom=0.05cm, left=0.25cm, right=0.25cm]{geometry}
 \usepackage{ragged2e}
 \usepackage{multicol}
 \usepackage{enumitem}
@@ -35,16 +36,11 @@
 
 \begin{document}
 
-% Ultra-compact header: photo left (not in margin), title/info centered and bigger
-\hspace*{0.03\textwidth}% less horizontal space before photo (10% bump back)
-\begin{minipage}[c]{0.13\textwidth}
-  \includegraphics[width=0.85\linewidth]{images/ahmed.jpg}
-\end{minipage}%
-\hfill
-\begin{minipage}[c]{0.84\textwidth}
-  \begin{center}
+
+% Ultra-compact header: title/info centered and bigger (no photo)
+\begin{center}
     {\fontsize{20}{22}\selectfont\textbf{Ahmed MAKROUM}}\\[0.7em]
-    {\fontsize{13.2}{15.4}\selectfont Data Engineer \& Développeur Full-Stack Web/Mobile} \\[0.5em] % <--- Ajouté ici
+    {\fontsize{13.2}{15.4}\selectfont Data Engineer \& Développeur Full-Stack Web/Mobile} \\[0.5em]
     {\fontsize{10.5}{12.3}\selectfont
       \faMobile\enspace +212 664715219 \quad
       \faEnvelope\enspace ahmedmakroum3@gmail.com \quad
@@ -53,8 +49,7 @@
       \faGithub\enspace \href{https://github.com/ahmedmakroum}{github.com/ahmedmakroum}
       \faGlobe\enspace \href{https://makroum.website}{makroum.website}
     }\\[1em]
-  \end{center}
-\end{minipage}
+\end{center}
 \vspace{-14pt}
 
 % PROFIL
@@ -123,7 +118,7 @@ Ingénieur d'État spécialisé en data engineering et développement full-stack
 \vspace{-18pt}
 \section{\fontsize{11}{12.1}\selectfont Certifications}
 \vspace{-5pt}
-\textit{Certifications obtenues via Coursera.}
+    extit{Certifications obtenues via Coursera.}
 \begin{itemize}[leftmargin=0.3cm, itemsep=-2pt, topsep=0pt, partopsep=0pt, parsep=0pt]
     \item \textbf{\href{https://www.coursera.org/account/accomplishments/verify/G178XXP17WQA}{Machine Learning with Python}} (IBM)
     \item \textbf{\href{https://www.coursera.org/account/accomplishments/records/M5RKGX36BAVA}{IBM Data Engineering}} (IBM)
@@ -138,12 +133,13 @@ Ingénieur d'État spécialisé en data engineering et développement full-stack
 \section{\fontsize{11}{12.1}\selectfont Compétences}
 \vspace{-6pt}
 \begin{itemize}[leftmargin=0.3cm, itemsep=-2pt, topsep=0pt, partopsep=0pt, parsep=0pt]
-  \item \textbf{Data Engineering} : ETL (NiFi, Airflow), Big Data (Hadoop, Spark), Kafka, PostgreSQL, Cassandra, GCP, AWS
-  \item \textbf{Programmation} : C, Python, SQL, Java, TypeScript
-  \item \textbf{Web/Mobile} : React, Next.js, Flutter, Spring boot, Apis REST
-  \item \textbf{DevOps et Cloud} : Docker, Kubernetes, Git, CI/CD, Linux
-  \item \textbf{Visualisation} : Metabase, Superset, Power BI
-  \item \textbf{Soft Skills} : Travail d’équipe, communication, adaptabilité, résolution de problèmes
+    \item \textbf{Data Engineering} : ETL (NiFi, Airflow), Big Data (Hadoop, Spark), Kafka, PostgreSQL, Cassandra, GCP, AWS
+    \item \textbf{Programmation} : C, Python, SQL, Java, TypeScript
+    \item \textbf{Web/Mobile} : React, Next.js, Flutter, Spring boot, Apis REST
+    \item \textbf{DevOps et Cloud} : Docker, Kubernetes, Git, CI/CD, Linux
+    \item \textbf{Visualisation} : Metabase, Superset, Power BI
+    \item \textbf{Soft Skills} : Travail d’équipe, communication, adaptabilité, résolution de problèmes
+\end{itemize}
 \end{itemize}
 
 % LANGUES
@@ -169,4 +165,3 @@ Ingénieur d'État spécialisé en data engineering et développement full-stack
 \end{center}
 
 \end{document}
-
