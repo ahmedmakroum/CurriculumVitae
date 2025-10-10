@@ -1,10 +1,10 @@
-  \documentclass[10pt,a4paper,sans]{moderncv}
+  \documentclass[11pt,a4paper,sans]{moderncv}
   \moderncvstyle{banking}
   \moderncvcolor{black}
   \nopagenumbers{}
 
   \usepackage[utf8]{inputenc}
-  \usepackage[top=0.15cm, bottom=0cm, left=0.30cm, right=0.30cm]{geometry}
+  \usepackage[top=0.30cm, bottom=0.30cm, left=0.50cm, right=0.50cm]{geometry}
   \usepackage{ragged2e}
   \usepackage{multicol}
   \usepackage{enumitem}
@@ -12,7 +12,7 @@
   \usepackage{fontawesome5}
   \usepackage{xcolor}
   \usepackage{hyperref}
-  \hypersetup{colorlinks=true, urlcolor=blue}
+  \hypersetup{colorlinks=true, urlcolor=black}
 
   % Custom cventry
   \newcommand*{\customcventry}[7][.10em]{%
@@ -44,7 +44,7 @@
   \begin{minipage}[c]{0.84\textwidth}
     \begin{center}
       {\fontsize{20}{22}\selectfont\textbf{Ahmed MAKROUM}}\\[0.7em]
-      {\fontsize{13.2}{15.4}\selectfont Data Engineer \& Développeur Full-Stack Web/Mobile} \\[0.5em] % <--- Ajouté ici
+      {\fontsize{13.2}{15.4}\selectfont  Data Engineer – Big Data \& Cloud} \\[0.5em] % <--- Ajouté ici
       {\fontsize{10.5}{12.3}\selectfont
         \faMobile\enspace +212 6 64 71 62 19 \quad
         \faEnvelope\enspace ahmedmakroum3@gmail.com \quad
@@ -55,76 +55,86 @@
       }\\[1em]
     \end{center}
   \end{minipage}
-  \vspace{-17pt}
+  \vspace{-11pt}
 
   % PROFIL
-  \section{\fontsize{11}{12.1}\selectfont Profil}
+  \section{\fontsize{11}\selectfont Profil}
   \vspace{-6pt}
-Ingénieur d'état spécialisé en data engineering et développement full-stack, avec une pratique concrète de la création de pipelines de données, d’applications web et de l’utilisation de plateformes cloud. Je cherche à rejoindre une équipe où je pourrai concevoir des systèmes utiles, en améliorer la performance, tout en continuant à affiner mes compétences à travers des projets exigeants.
+Ingénieur d’état spécialisé en data engineering, avec une pratique concrète de la création de pipelines de données, de systèmes d’ingestion et de transformation, et de l’utilisation de plateformes cloud. Je cherche à rejoindre une équipe où je pourrai concevoir des architectures de données fiables, en améliorer la performance, tout en continuant à affiner mes compétences à travers des projets exigeants.
   % EXPÉRIENCE
-  \vspace{-17pt}
+  \vspace{-14pt}
   {\renewcommand{\labelitemi}{\raisebox{0.2ex}{\scalebox{1.15}{$\bullet$}}} % +15% size for bullets here only
-  \section{\fontsize{11}{12.1}\selectfont Expérience}
+  \section{\fontsize{11}\selectfont Expérience}
   \vspace{-3pt}
 
-  \customcventry{03/2025 ‐ 08/2025}{\href{https://www.allianz.ma}{Allianz Maroc}}{Data Engineer}{}{}{
-  \begin{itemize}[leftmargin=0.8cm, itemsep=-2pt, topsep=0pt, partopsep=0pt, parsep=0pt]
-  \fontsize{10.5}{12.3}\selectfont
-  \item Conception et déploiement de pipelines de données (NiFi, Spark) pour l’extraction, le nettoyage et le chargement depuis les systèmes d’assurance internes, permettant d’automatiser un traitement auparavant manuel.
-  \item Intégration des sources fragmentées dans un entrepôt PostgreSQL, consolidant plusieurs flux métiers.
-  \item Création de dashboards avec Metabase, facilitant l’accès aux données pour les utilisateurs métiers et rendant possible une visualisation directe des indicateurs clés.
-  \item Développement et maintenance d’une application web de gestion des règlements de santé en architecture microservices (Spring Boot, Next.js), avec gestion fine des rôles et authentification sécurisée, utilisée par les équipes métier au quotidien.
+  
+  \customcventry{09/2025 ‐ present}{\href{https://metave.ma/}{Metaverse}}{Data Engineer}{}{}{
+  \begin{itemize}[leftmargin=0.6cm, itemsep=-2pt, topsep=0pt, partopsep=0pt, parsep=0pt]
+  \fontsize{11}{12.3}\selectfont
+     \item Créé des plans d’infrastructure data pour des clients avec GCP, AWS et des systèmes internes, facilitant la mise en place et l’uniformité des projets  
+     \item Mis en place l’automatisation des déploiements avec Terraform, réduisant le travail manuel et rendant les environnements plus faciles à gérer et à étendre 
   \end{itemize}}
 
-  \customcventry{06/2024 ‐ 08/2024}{\href{https://boti.education/}{BOTI School}}{Data Engineer}{}{}{
-  \begin{itemize}[leftmargin=0.8cm, itemsep=-2pt, topsep=0pt, partopsep=0pt, parsep=0pt]
-  \fontsize{10.5}{12.3}\selectfont
-  \item Développement d’un pipeline ETL distribué avec Apache Beam sur Google Cloud pour traiter des millions de logs utilisateurs.
-  \item Structuration de données issues de buckets GCP, rendant possible une analyse comportementale fiable.
-  \item Conception de dashboards automatisés via Looker, adoptés par l’équipe pour améliorer les prises de décisions stratégiques.
+
+  \customcventry{03/2025 ‐ 08/2025}{\href{https://www.allianz.ma}{Allianz Maroc}}{Stage - Data Engineer}{}{}{
+  \begin{itemize}[leftmargin=0.6cm, itemsep=-2pt, topsep=0pt, partopsep=0pt, parsep=0pt]
+  \fontsize{11}{12.3}\selectfont
+                \item Conçu et déployé des pipelines de données (NiFi, Spark) pour extraire, nettoyer et charger les données des systèmes d’assurance internes, automatisant un traitement auparavant manuel
+                \item Intégré des sources fragmentées dans un entrepôt PostgreSQL, consolidant plusieurs flux métiers
+                \item Créé des dashboards avec Metabase, facilitant l’accès aux données et la visualisation directe des indicateurs clé pour les utilisateurs métiers
+                \item Développé et maintenu une application web de gestion des règlements de santé en architecture microservices (Spring Boot, Next.js), assurant une gestion fine des rôles et une authentification sécurisée, utilisée quotidiennement par les équipes métier
   \end{itemize}}
 
-  \customcventry{06/2023 ‐ 08/2023}{\href{https://6solutions.com/}{6solutions}}{Web and Mobile Developer}{}{}{
-  \begin{itemize}[leftmargin=0.8cm, itemsep=-2pt, topsep=0pt, partopsep=0pt, parsep=0pt]
-  \fontsize{10.5}{12.3}\selectfont
-  \item Développement d’une plateforme de consulting multi-services (juridique, médical, financier).
-  \item Front-end réalisé avec Angular, back-end avec Spring Boot.
-  \item Conception et déploiement de la version mobile de l’application en Flutter.
+  \customcventry{06/2024 ‐ 08/2024}{\href{https://boti.education/}{BOTI School}}{Stage - Data Engineer}{}{}{
+  \begin{itemize}[leftmargin=0.6cm, itemsep=-2pt, topsep=0pt, partopsep=0pt, parsep=0pt]
+  \fontsize{11}{12.3}\selectfont
+                \item Conçu et déployé un pipeline ETL distribué avec Apache Beam sur Google Cloud, capable de traiter des millions de logs utilisateurs de manière fiable et performante.  
+                \item Structuré et optimisé des données issues de buckets GCP, permettant une analyse comportementale exploitable
+                \item Développé des dashboards automatisés via Looker, adoptés par l’équipe pour soutenir les décisions stratégiques
   \end{itemize}}
 
-  \customcventry{07/2022 ‐ 08/2022}{\href{https://estatmar.ma/}{Finso}}{Game Developer}{}{}{%
-  \begin{itemize}[leftmargin=0.8cm, itemsep=-2pt, topsep=0pt, partopsep=0pt, parsep=0pt]
-  \fontsize{10.5}{12.3}\selectfont
-  \item Développement d’un jeu éducatif ludique, destiné aux enfants, pour introduire des notions simples de gestion et de stratégie.
-  \item Réalisation sous Unity avec un gameplay interactif, des animations soignées et une interface adaptée à un jeune public.
+  \customcventry{06/2023 ‐ 08/2023}{\href{https://6solutions.com/}{6solutions}}{Stage - Web and Mobile Developer}{}{}{
+  \begin{itemize}[leftmargin=0.6cm, itemsep=-2pt, topsep=0pt, partopsep=0pt, parsep=0pt]
+  \fontsize{11}{12.3}\selectfont
+                \item Développé une plateforme de consulting multi-services (juridique, médical, financier), offrant une solution centralisée pour différents besoins clients 
+                \item Réalisé le front-end avec Angular et le back-end avec Spring Boot, assurant une architecture web cohérente
+                \item Conçu et déployé la version mobile de l’application en Flutter, permettant un accès fluide aux services depuis n’importe quel appareil
+  \end{itemize}}
+
+  \customcventry{07/2022 ‐ 08/2022}{\href{https://estatmar.ma/}{Finso}}{Stage - Game Developer}{}{}{%
+  \begin{itemize}[leftmargin=0.6cm, itemsep=-2pt, topsep=0pt, partopsep=0pt, parsep=0pt]
+  \fontsize{11}{12.3}\selectfont
+                \item Développé un jeu éducatif ludique pour enfants, introduisant des notions de gestion et de stratégie de manière interactive 
+                \item Réalisé le projet sous Unity, avec gameplay interactif, animations soignées et interface adaptée, assurant une expérience engageante pour le jeune public
   \end{itemize}}}
-  }
-
-  % PROJETS
-  \vspace{-14pt}
-  \section{\fontsize{11}{12.1}\selectfont Projets}
-  \vspace{-4pt}
-  \begin{itemize}[leftmargin=0.3cm, itemsep=-2pt, topsep=0pt, partopsep=0pt, parsep=0pt]
-      \item \textbf{News Pipeline} : Scraping multi-sources orchestré avec Airflow, transformation en stream avec Kafka, enrichissement LLM (résumés + validation), monitoring Prometheus, stockage Cassandra. (Python, Kafka, API llm, Airflow, Cassandra)
-      \item \textbf{Pipeline d'Analyse de Logs de Site Web} : Collecte de logs d'événements de site web en temps réel (clics, pages vues), orchestration de l'ingestion avec Cloud Composer, stockage et analyse des données dans BigQuery, création d'un tableau de bord de suivi du trafic et des erreurs. (Cloud Composer, GCP, BigQuery, Python)
-      \item \textbf{Suivi des Prix de Produits au Maroc} : Scraping quotidien de prix de produits (alimentaires, électroniques...), stockage PostgreSQL, dashboards de comparaison par ville/produit, alertes inflation. (Python, Airflow, Metabase, PostgreSQL)
-      \item \textbf{JobTrack – Suivi de Candidatures} : Application web pour gérer ses candidatures (CV, statuts, notes) avec stockage Cloudinary, recherche temps réel et visualisation des statistiques. (Next.js, Tailwind, MongoDB, Cloudinary)
-
-  \end{itemize}
+  
 
   % FORMATION
-  \vspace{-17pt}
-  \section{\fontsize{11}{12.1}\selectfont Formation}
+  \vspace{-11pt}
+  \section{\fontsize{11}\selectfont Formation}
   \vspace{-4pt}
-  \customcventry{2020 -- 2025}{\href{https://emsi.ma}{\textbf{EMSI – École Marocaine des Sciences de l’Ingénieur}}}{Diplôme d’Ingénieur en Informatique et Réseaux option MIAGE \\ (Méthodes Informatiques Appliquées à la Gestion des Entreprises)}{}{}{}
-  \customcventry{Juil. 2024 ‐ Sep. 2024}{\href{https://www.alxafrica.com}{\textbf{ALX Academy}}}{Diplôme de Formation en Intelligence Artificielle et Prompt Engineering}{}{}{ALX AiCE – AI Fundamentals}
+\noindent
+\parbox[t]{0.78\textwidth}{
+    \textbf{\href{https://emsi.ma}{EMSI – École Marocaine des Sciences de l’Ingénieur}}, \\
+    Diplôme d’Ingénieur d'état en Informatique et Réseaux, option MIAGE 
+    (Méthodes Informatiques Appliquées à la Gestion des Entreprises)
+}
+\hfill
+\parbox[t]{0.2\textwidth}{
+    \raggedleft \textit{09/2020 - 03/2025}
+}
+\vspace{0.3em}
+
+
+
+{}
 
   % CERTIFICATIONS
-  \vspace{-18pt}
-  \section{\fontsize{11}{12.1}\selectfont Certifications}
+  \vspace{-11pt}
+  \section{\fontsize{11}\selectfont Certifications}
   \vspace{-5pt}
   \textit{Certifications obtenues via Coursera.}
-  \begin{itemize}[leftmargin=0.3cm, itemsep=-2pt, topsep=0pt, partopsep=0pt, parsep=0pt]
+  \begin{itemize}[leftmargin=0cm, itemsep=-2pt, topsep=0pt, partopsep=0pt, parsep=0pt, label={}]
       \item \textbf{\href{https://www.coursera.org/account/accomplishments/verify/G178XXP17WQA}{Machine Learning with Python}} (IBM)
       \item \textbf{\href{https://www.coursera.org/account/accomplishments/records/M5RKGX36BAVA}{IBM Data Engineering}} (IBM)
       \item \textbf{\href{https://google.com}{Building Scalable Java Microservices with Spring Boot and Spring Cloud}} (Google Cloud)
@@ -134,39 +144,16 @@ Ingénieur d'état spécialisé en data engineering et développement full-stack
   \end{itemize}
 
   % COMPÉTENCES
-  \vspace{-18pt}
-  \section{\fontsize{11}{12.1}\selectfont Compétences}
+  \vspace{-11pt}
+  \section{\fontsize{11}\selectfont Compétences}
   \vspace{-6pt}
-  \begin{itemize}[leftmargin=0.3cm, itemsep=-2pt, topsep=0pt, partopsep=0pt, parsep=0pt]
-    \item \textbf{Data Engineering} : ETL (NiFi, Airflow), Big Data (Hadoop, Spark), Kafka, PostgreSQL, Cassandra, GCP, AWS
-    \item \textbf{Programmation} : Python, SQL, Java, TypeScript
-    \item \textbf{Web/Mobile} : React, Next.js, Flutter, Spring boot, Apis REST
-    \item \textbf{DevOps et Cloud} : Docker, Kubernetes, Git, CI/CD, Linux
-    \item \textbf{Visualisation} : Metabase, Superset, Power BI
+  \begin{itemize}[leftmargin=0cm, itemsep=-2pt, topsep=0pt, partopsep=0pt, parsep=0pt, label={}]
+    \item \textbf{Data Engineering & Cloud:} : ETL, Big Data (Hadoop, Spark), Kafka • GCP, AWS, Docker, Terraform, CI/CD, Linux
+    \item \textbf{Programmation & Données:} : Python, SQL, Java • PostgreSQL, MongoDB, Cassandra
     \item \textbf{Soft Skills} : Travail d’équipe, communication, adaptabilité, résolution de problèmes
-  \end{itemize}
+  \end{itemize} 
 
-  % LANGUES
-  \vspace{-18pt}
-  \section{\fontsize{11}{12.1}\selectfont Langues}
-  \vspace{-17pt}
-  \begin{multicols}{2}
-  \begin{itemize}[leftmargin=0.3cm, itemsep=-2pt, topsep=0pt, partopsep=0pt, parsep=0pt]
-      \item Anglais – Courant
-      \item Français – Courant
-      \item Arabe – Maternelle
-      \item Espagnol – Notions
-  \end{itemize}
-  \end{multicols}
-
-  % FOOTER
-
-  \vspace{-20pt}
-  \begin{center}
-      {\fontsize{9}{11}\selectfont\color{gray}
-      Pour plus d'informations sur mon travail, visitez mon~
-      \faLinkedin~\href{https://www.linkedin.com/in/ahmed-makroum/}{LinkedIn}~ou~\faGithub~\href{https://github.com/ahmedmakroum}{GitHub}.}
-  \end{center}
+ 
 
   \end{document}
 
