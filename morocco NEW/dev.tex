@@ -5,7 +5,6 @@
 
   \usepackage[utf8]{inputenc}
   \usepackage[top=0.30cm, bottom=0.30cm, left=0.50cm, right=0.50cm]{geometry}
-  \usepackage{ragged2e}
   \usepackage{multicol}
   \usepackage{enumitem}
   \usepackage{amssymb}
@@ -28,12 +27,13 @@
   \ifx&#7&%
   \else{\\
   \begin{minipage}{\maincolumnwidth}%
-      \footnotesize#7%
+      \raggedright\footnotesize#7%
   \end{minipage}}\fi%
   \par\addvspace{#1}
   }
 
   \begin{document}
+  \raggedright
 
   % Ultra-compact header: photo left (not in margin), title/info centered and bigger
   \hspace*{0.03\textwidth}% less horizontal space before photo (10% bump back)
@@ -44,7 +44,7 @@
   \begin{minipage}[c]{0.84\textwidth}
     \begin{center}
       {\fontsize{20}{22}\selectfont\textbf{Ahmed MAKROUM}}\\[0.7em]
-      {\fontsize{13.2}{15.4}\selectfont  Développeur Full-Stack \& Ingénieur Logiciel} \\[0.5em] % <--- Ajouté ici
+      {\fontsize{13.2}{15.4}\selectfont  Data Engineer – Big Data \& Cloud} \\[0.5em] % <--- Ajouté ici
       {\fontsize{10.5}{12.3}\selectfont
         \faMobile\enspace +212 6 64 71 62 19 \quad
         \faEnvelope\enspace ahmedmakroum3@gmail.com \quad
@@ -60,7 +60,8 @@
   % PROFIL
   \section{\fontsize{11}\selectfont Profil}
   \vspace{-6pt}
-Ingénieur d’état spécialisé en data engineering, avec une pratique concrète de la création de pipelines de données, de systèmes d’ingestion et de transformation, et de l’utilisation de plateformes cloud. Je cherche à rejoindre une équipe où je pourrai concevoir des architectures de données fiables, en améliorer la performance, tout en continuant à affiner mes compétences à travers des projets exigeants.
+Ingénieur d’État en Data Engineering, spécialisé dans la conception de pipelines de données et l’automatisation des flux sur GCP et AWS. Expérience concrète en ingestion, transformation et orchestration de données à grande échelle, avec un accent sur la fiabilité, la performance et la valorisation des données métier.
+
   % EXPÉRIENCE
   \vspace{-14pt}
   {\renewcommand{\labelitemi}{\raisebox{0.2ex}{\scalebox{1.15}{$\bullet$}}} % +15% size for bullets here only
@@ -69,32 +70,32 @@ Ingénieur d’état spécialisé en data engineering, avec une pratique concrè
 
   
   \customcventry{09/2025 ‐ present}{\href{https://metave.ma/}{Metaverse}}{Data Engineer}{}{}{
-  \begin{itemize}[leftmargin=0.6cm, itemsep=-2pt, topsep=0pt, partopsep=0pt, parsep=0pt]
+  \begin{itemize}[leftmargin=0.5cm, itemsep=-2pt, topsep=0pt, partopsep=0pt, parsep=0pt]
   \fontsize{11}{12.3}\selectfont
-     \item Créé des plans d’infrastructure data pour des clients avec GCP, AWS et des systèmes internes, facilitant la mise en place et l’uniformité des projets  
-     \item Mis en place l’automatisation des déploiements avec Terraform, réduisant le travail manuel et rendant les environnements plus faciles à gérer et à étendre 
-  \end{itemize}}
+\item Conçu des architectures data modulaires sur GCP, AWS et on-premise, standardisant les déploiements clients et réduisant les temps de mise en place.
+        \item Automatisé l’infrastructure avec Terraform, supprimant la configuration manuelle et permettant le déploiement d’environnements scalables en quelques minutes.
+        \item Mis en place des workflows CI/CD cloud-agnostiques, assurant la cohérence et la traçabilité des versions sur plusieurs environnements  \end{itemize}}
 
 
   \customcventry{03/2025 ‐ 08/2025}{\href{https://www.allianz.ma}{Allianz Maroc}}{Stage - Data Engineer}{}{}{
-  \begin{itemize}[leftmargin=0.6cm, itemsep=-2pt, topsep=0pt, partopsep=0pt, parsep=0pt]
+  \begin{itemize}[leftmargin=0.5cm, itemsep=-2pt, topsep=0pt, partopsep=0pt, parsep=0pt]
   \fontsize{11}{12.3}\selectfont
-                \item Conçu et déployé des pipelines de données (NiFi, Spark) pour extraire, nettoyer et charger les données des systèmes d’assurance internes, automatisant un traitement auparavant manuel
-                \item Intégré des sources fragmentées dans un entrepôt PostgreSQL, consolidant plusieurs flux métiers
-                \item Créé des dashboards avec Metabase, facilitant l’accès aux données et la visualisation directe des indicateurs clé pour les utilisateurs métiers
-                \item Développé et maintenu une application web de gestion des règlements de santé en architecture microservices (Spring Boot, Next.js), assurant une gestion fine des rôles et une authentification sécurisée, utilisée quotidiennement par les équipes métier
+\item Conçu et déployé des pipelines NiFi–Spark intégrant plusieurs sources internes dans un entrepôt PostgreSQL unifié, créant une base de données métier centralisée et fiable.
+\item Automatisé les extractions de données pour les équipes métier, supprimant les demandes manuelles et réduisant les délais de livraison des rapports de plusieurs heures à quelques minutes.
+\item Développé une solution de reporting interactive via Metabase, permettant aux utilisateurs de configurer leurs propres tableaux de bord et d’accéder en libre-service à leurs indicateurs clés.
+        \item Développé une application microservices (Spring Boot, Next.js) de gestion des règlements santé, avec authentification sécurisée et rôles granulaires, utilisée quotidiennement par 50+ utilisateurs métier.
   \end{itemize}}
 
   \customcventry{06/2024 ‐ 08/2024}{\href{https://boti.education/}{BOTI School}}{Stage - Data Engineer}{}{}{
-  \begin{itemize}[leftmargin=0.6cm, itemsep=-2pt, topsep=0pt, partopsep=0pt, parsep=0pt]
+  \begin{itemize}[leftmargin=0.5cm, itemsep=-2pt, topsep=0pt, partopsep=0pt, parsep=0pt]
   \fontsize{11}{12.3}\selectfont
-                \item Conçu et déployé un pipeline ETL distribué avec Apache Beam sur Google Cloud, capable de traiter des millions de logs utilisateurs de manière fiable et performante.  
-                \item Structuré et optimisé des données issues de buckets GCP, permettant une analyse comportementale exploitable
-                \item Développé des dashboards automatisés via Looker, adoptés par l’équipe pour soutenir les décisions stratégiques
+\item Développé un pipeline Apache Beam sur GCP pour traiter et agréger les logs d’utilisation stockés dans des buckets GCS, permettant le suivi précis de la consommation des utilisateurs.
+\item Construit un entrepôt de données sur BigQuery, centralisant les métriques d’usage et automatisant le calcul de la facturation interne par utilisateur.
+\item Créé des dashboards dynamiques dans Looker Studio pour l’équipe financière, offrant une visibilité en temps réel sur les coûts et réduisant le temps de production des rapports de plusieurs heures à quelques minutes.
   \end{itemize}}
 
   \customcventry{06/2023 ‐ 08/2023}{\href{https://6solutions.com/}{6solutions}}{Stage - Web and Mobile Developer}{}{}{
-  \begin{itemize}[leftmargin=0.6cm, itemsep=-2pt, topsep=0pt, partopsep=0pt, parsep=0pt]
+  \begin{itemize}[leftmargin=0.5cm, itemsep=-2pt, topsep=0pt, partopsep=0pt, parsep=0pt]
   \fontsize{11}{12.3}\selectfont
                 \item Développé une plateforme de consulting multi-services (juridique, médical, financier), offrant une solution centralisée pour différents besoins clients 
                 \item Réalisé le front-end avec Angular et le back-end avec Spring Boot, assurant une architecture web cohérente
@@ -102,7 +103,7 @@ Ingénieur d’état spécialisé en data engineering, avec une pratique concrè
   \end{itemize}}
 
   \customcventry{07/2022 ‐ 08/2022}{\href{https://estatmar.ma/}{Finso}}{Stage - Game Developer}{}{}{%
-  \begin{itemize}[leftmargin=0.6cm, itemsep=-2pt, topsep=0pt, partopsep=0pt, parsep=0pt]
+  \begin{itemize}[leftmargin=0.5cm, itemsep=-2pt, topsep=0pt, partopsep=0pt, parsep=0pt]
   \fontsize{11}{12.3}\selectfont
                 \item Développé un jeu éducatif ludique pour enfants, introduisant des notions de gestion et de stratégie de manière interactive 
                 \item Réalisé le projet sous Unity, avec gameplay interactif, animations soignées et interface adaptée, assurant une expérience engageante pour le jeune public
