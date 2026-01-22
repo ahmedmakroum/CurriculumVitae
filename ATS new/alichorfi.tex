@@ -34,6 +34,7 @@
 \usepackage{ifthen} % for conditional statements
 \usepackage{needspace} % for avoiding page brake right after the section title
 \usepackage{iftex} % check if engine is pdflatex, xetex or luatex
+\usepackage{graphicx} % for including images
 
 % Ensure that generate pdf is machine readable/ATS parsable:
 \ifPDFTeX
@@ -160,32 +161,34 @@
     \sbox\ANDbox{$|$}
 
     \begin{header}
-        \fontsize{25 pt}{25 pt}\selectfont Ahmed MAKROUM
+        \begin{minipage}[c]{0.7\textwidth}
+            \centering
+            \fontsize{25 pt}{25 pt}\selectfont Ali CHORFI
 
-        \vspace{5 pt}
+            \vspace{5 pt}
 
-        \normalsize
-        \mbox{Casablanca, Maroc}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{mailto:ahmedmakroum3@gmail.com}{ahmedmakroum3@gmail.com}}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{tel:+212 664716219}{06 64 71 62 19}}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{https://makroum.website/}{makroum.website}}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/ahmed-makroum/}{/in/ahmed-makroum}}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{https://github.com/ahmedmakroum}{github.com/ahmedmakroum}}%
+            \normalsize
+            \mbox{Casablanca, Maroc}%
+            \kern 5.0 pt%
+            \AND%
+            \kern 5.0 pt%
+            \mbox{\hrefWithoutArrow{mailto:alichorfi20@gmail.com}{alichorfi20@gmail.com}}%
+            \kern 5.0 pt%
+            \AND%
+            \kern 5.0 pt%
+            \mbox{\hrefWithoutArrow{tel:+212 648109759}{06 48 10 97 59}}%
+            \kern 5.0 pt%
+            \AND%
+            \kern 5.0 pt%
+            \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/ali-chorfi-35251a26a/}{/in/ali-chorfi}}%
+            \kern 5.0 pt%
+            \AND%
+        \end{minipage}%
+        \hfill%
+        \begin{minipage}[c]{0.25\textwidth}
+            \raggedleft
+            \includegraphics[width=3cm,height=3cm,keepaspectratio]{../images/ahmed.jpg}
+        \end{minipage}
     \end{header}
 
     \vspace{5 pt - 0.3 cm}
@@ -197,8 +200,7 @@
 
         
         \begin{onecolentry}
-Ingénieur d’État spécialisé en ingénierie des données, je construis des pipelines fiables et j’automatise les flux pour transformer les données en informations utiles.
-Je conçois des systèmes qui aident les équipes à travailler plus efficacement et à prendre de meilleures décisions.
+Ingénieur d’État en informatique et réseaux, je développe des applications web et mobiles complètes, côté client et serveur, en privilégiant la clarté, l’utilisabilité et la fiabilité, avec une expérience des outils cloud, de l’hébergement et du CI/CD.
 À la recherche d’un poste pour contribuer à des projets concrets.
         \end{onecolentry}
 
@@ -210,66 +212,19 @@ Je conçois des systèmes qui aident les équipes à travailler plus efficacemen
     \section{Expérience}
 
 
-    \begin{twocolentry}{
-            Sept 2025 –  Present
-        }
-            \textbf{Data Engineer}, Metaverse \end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Conçu des architectures data modulaires sur GCP, AWS et on-premise, standardisant les déploiements clients et réduisant les temps de mise en place.
-                \item Automatisé l’infrastructure avec Terraform, supprimant la configuration manuelle et permettant le déploiement d’environnements scalables en quelques minutes.
 
 
-            \end{highlights}
-        \end{onecolentry}
+    
+
+
 
 
         \vspace{0.2 cm}
-        
+
         \begin{twocolentry}{
             Mars 2025 – Sept 2025
         }
-            \textbf{Stage – Data Engineer}, Allianz Maroc \end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Conçu et déployé des pipelines NiFi–Spark intégrant plusieurs sources internes dans un entrepôt PostgreSQL unifié, créant une base de données métier centralisée et fiable.
-                \item Automatisé les extractions de données pour les équipes métier, supprimant les demandes manuelles et réduisant les délais de livraison des rapports de plusieurs heures à quelques minutes.
-                \item Développé une solution de reporting interactive via Metabase, permettant aux utilisateurs de configurer leurs propres tableaux de bord et d’accéder en libre-service à leurs indicateurs clés.
-                \item Développé une application microservices (Spring Boot, Next.js) de gestion des règlements santé, avec authentification sécurisée et rôles granulaires, utilisée quotidiennement par 50+ utilisateurs métier.
-
-            \end{highlights}
-        \end{onecolentry}
-
-
-        \vspace{0.2 cm}
-        
-        \begin{twocolentry}{
-            Juin 2024 – Août 2024
-        }
-            \textbf{Stage – Data Engineer}, Boti School \end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Développé un pipeline Apache Beam sur GCP pour traiter et agréger les logs d’utilisation stockés dans des buckets GCS, permettant le suivi précis de la consommation des utilisateurs.
-                \item Construit un entrepôt de données sur BigQuery, centralisant les métriques d’usage et automatisant le calcul de la facturation interne par utilisateur.
-                \item Créé des dashboards dynamiques dans Looker Studio pour l’équipe financière, offrant une visibilité en temps réel sur les coûts et réduisant le temps de production des rapports de plusieurs heures à quelques minutes.
-                
-            \end{highlights}
-        \end{onecolentry}
-
-
-
-        \vspace{0.2 cm}
-
-        \begin{twocolentry}{
-            Juin 2023 – Août 2023
-        }
-            \textbf{Stage – Développeur Web et Mobile}, 6Solutions\end{twocolentry}
+            \textbf{Stage – Développeur Web}, 6Solutions\end{twocolentry}
 
         \vspace{0.10 cm}
         \begin{onecolentry}
@@ -286,7 +241,7 @@ Je conçois des systèmes qui aident les équipes à travailler plus efficacemen
         \vspace{0.2 cm}
 
         \begin{twocolentry}{
-            Juil 2023 – Août 2023
+            Juil 2024 – Août 2024
         }
             \textbf{Stage – Développeur Jeux Vidéo}, Finso\end{twocolentry}
 
@@ -297,6 +252,28 @@ Je conçois des systèmes qui aident les équipes à travailler plus efficacemen
                 \item Réalisé le projet sous Unity, avec gameplay interactif, animations soignées et interface adaptée, assurant une expérience engageante pour le jeune public
             \end{highlights}
         \end{onecolentry}
+
+
+
+    \vspace{0.2 cm}
+        
+        \begin{twocolentry}{
+            Juil 2025 – Août 2023
+        }
+            \textbf{Stage – Développeur Mobile}, Esith \end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+\item Conçu et développé l’application mobile officielle de l’école ESITH avec React Native, destinée aux étudiants, intégrant une authentification sécurisée et un accès centralisé aux informations institutionnelles.
+\item Implémenté un backend serverless basé sur Firebase (Authentication, Firestore), assurant la gestion des comptes étudiants, des contenus applicatifs et la mise à jour dynamique des données.
+\item Développé des modules fonctionnels incluant la présentation de l’établissement, une section FAQ, la gestion et la mise en avant des clubs étudiants, ainsi que des contenus informatifs accessibles en libre-service.
+\item Conçu une interface mobile performante et intuitive, optimisée pour une utilisation quotidienne par les étudiants et alignée avec l’identité de l’établissement.
+
+
+            \end{highlights}
+        \end{onecolentry}
+
 
 
 
