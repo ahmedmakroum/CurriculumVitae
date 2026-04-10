@@ -3,10 +3,10 @@
 % Packages:
 \usepackage[
     ignoreheadfoot, % set margins without considering header and footer
-    top=2 cm, % seperation between body and page edge from the top
-    bottom=2 cm, % seperation between body and page edge from the bottom
-    left=2 cm, % seperation between body and page edge from the left
-    right=2 cm, % seperation between body and page edge from the right
+    top=0.5 cm, % seperation between body and page edge from the top
+    bottom=1 cm, % seperation between body and page edge from the bottom
+    left=0.8 cm, % seperation between body and page edge from the left
+    right=0.8 cm, % seperation between body and page edge from the right
     footskip=1.0 cm, % seperation between body and footer
     % showframe % for debugging 
 ]{geometry} % for adjusting page geometry
@@ -63,7 +63,7 @@
     -1pt
 }{
     % top space:
-    0.3 cm
+    0.2 cm
 }{
     % bottom space:
     0.2 cm
@@ -197,7 +197,9 @@
 
         
         \begin{onecolentry}
-    Ingénieur logiciel avec une expérience concrète dans le développement et la maintenance d’applications et de systèmes de données. A travaillé sur le backend, le frontend et les pipelines de données, en livrant des fonctionnalités de bout en bout, de la conception à la mise en production. Attentif à la fiabilité du code, à la simplicité des systèmes et à la qualité d’exécution en conditions réelles.
+            Ingénieur logiciel développant des applications full-stack, des systèmes backend et des pipelines de données.
+
+            Expérience sur .NET, React et des outils modernes d’ingénierie data, avec livraison de solutions de bout en bout, de l’architecture à la production. Axé sur la performance, la conception de systèmes clairs et la construction d’applications fiables utilisées en conditions réelles.
         \end{onecolentry}
 
 
@@ -205,21 +207,21 @@
 
 
     
-    \section{Experience}
+    \section{Expérience}
 
 
      \begin{twocolentry}{
-            Fév. 2025 –  Present
+            Fév. 2025 –  Présent
         }
-            \textbf{Software Engineer}, Attijariwafa bank \end{twocolentry}
+            \textbf{Ingénieur logiciel}, Attijariwafa bank \end{twocolentry}
 
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-\item Développement d’applications internes en .NET (ASP.NET Core) et React, utilisées pour les processus métier et opérationnels.
-    \item Intégration des API Microsoft Graph pour la gestion des utilisateurs, des accès et des données collaboratives.
-    \item Conception de web parts SPFx (React) intégrées à SharePoint, facilitant l’usage des outils internes par les équipes.
-    \item Mise en place d’architectures applicatives (API REST, authentification, gestion des rôles) pour garantir la fiabilité et la maintenabilité.
+\item Développement d’applications full-stack avec .NET et React pour soutenir les workflows métier et améliorer l’efficacité opérationnelle.
+    \item Intégration des API Microsoft Graph pour centraliser les données utilisateurs, permissions et collaboration entre systèmes.
+    \item Développement de web parts SPFx (React) dans SharePoint, améliorant l’accessibilité et l’adoption des outils internes.
+    \item Conception et mise en place d’architectures backend (API REST, authentification, contrôle d’accès par rôles) garantissant évolutivité et maintenabilité.
 
 
 
@@ -233,13 +235,13 @@
     \begin{twocolentry}{
             Sept. 2025 –  Déc. 2025
         }
-            \textbf{Data Engineer}, Metaverse \end{twocolentry}
+            \textbf{Ingénieur Data}, Metaverse \end{twocolentry}
 
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item Conçu des architectures data modulaires sur GCP, AWS et on-premise, standardisant les déploiements clients et réduisant les temps de mise en place.
-                \item Automatisé l’infrastructure avec Terraform, supprimant la configuration manuelle et permettant le déploiement d’environnements scalables en quelques minutes.
+                \item Conception d’architectures data modulaires sur AWS, GCP et environnements on-premise, standardisant les déploiements et réduisant la complexité de mise en place.
+                \item Automatisation du provisionnement d’infrastructure avec Terraform, permettant des environnements évolutifs et reproductibles en quelques minutes.
 
 
             \end{highlights}
@@ -251,15 +253,15 @@
         \begin{twocolentry}{
             Mars 2025 – Sept. 2025
         }
-            \textbf{Stage – Data Engineer}, Allianz Maroc \end{twocolentry}
+            \textbf{Stage – Ingénieur Data}, Allianz Maroc \end{twocolentry}
 
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-\item Conception de pipelines NiFi + Spark consolidant plusieurs sources dans un entrepôt PostgreSQL (source unique de données).
+\item Construction de pipelines de données (NiFi + Spark) consolidant des données multi-sources dans un entrepôt PostgreSQL centralisé.
     \item Automatisation des extractions de données, réduisant le temps de livraison des rapports de plusieurs heures à quelques minutes.
-    \item Mise en place de tableaux de bord en self-service (Metabase) pour le suivi des KPI par les équipes métier.
-    \item Développement d’une application microservices (Spring Boot, Next.js) pour la gestion des sinistres, utilisée par 50+ utilisateurs quotidiens.
+    \item Mise en place de tableaux de bord self-service (Metabase), permettant aux équipes métier de suivre les KPI sans dépendance technique.
+    \item Développement d’une application basée sur des microservices (Spring Boot + Next.js) pour la gestion des sinistres, utilisée par 50+ utilisateurs quotidiens.
 
             \end{highlights}
         \end{onecolentry}
@@ -270,15 +272,14 @@
         \begin{twocolentry}{
             Juin 2024 – Août 2024
         }
-            \textbf{Stage – Data Engineer}, Boti School \end{twocolentry}
+            \textbf{Stage – Ingénieur Data}, Boti School \end{twocolentry}
 
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-                    \item Développement de pipelines Apache Beam (GCP) pour traiter les logs GCS et suivre la consommation utilisateur.
-    \item Conception d’un entrepôt BigQuery pour automatiser la facturation par utilisateur.
-    \item Création de tableaux de bord financiers en temps réel (Looker Studio), supprimant les rapports manuels.
-                
+\item Développement de pipelines Apache Beam (GCP) traitant des données d’usage à grande échelle pour un suivi précis de la consommation.
+    \item Conception d’un entrepôt BigQuery supportant des systèmes automatisés de facturation par utilisateur.
+    \item Mise en place de tableaux de bord en temps réel (Looker Studio), supprimant le reporting financier manuel.
             \end{highlights}
         \end{onecolentry}
 
@@ -294,9 +295,9 @@
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
- \item Développement d’une plateforme multi-services (juridique, médical, financier) centralisant les interactions clients.
-    \item Mise en place d’une architecture Angular + Spring Boot pour structurer le front et le back.
-    \item Déploiement d’une application mobile Flutter pour un accès multiplateforme.
+\item Développement d’une plateforme multi-services centralisant des services juridiques, médicaux et financiers.
+    \item Développement d’une architecture frontend/backend évolutive avec Angular et Spring Boot.
+    \item Livraison d’une application mobile multiplateforme avec Flutter.
     
             \end{highlights}
         \end{onecolentry}
@@ -308,16 +309,16 @@
         \begin{twocolentry}{
             Juil. 2023 – Août 2023
         }
-            \textbf{Stage – Développeur Jeux Vidéo}, Finso\end{twocolentry}
+            \textbf{Stage – Développeur Jeu Vidéo}, Finso\end{twocolentry}
 
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item Développé un jeu éducatif ludique pour enfants, introduisant des notions de gestion et de stratégie de manière interactive
-                \item Réalisé le projet sous Unity, avec gameplay interactif, animations soignées et interface adaptée, assurant une expérience engageante pour le jeune public
+                \item Développement d’un jeu éducatif introduisant des notions de gestion et de stratégie à travers un gameplay interactif.
+                \item Réalisation du projet sous Unity avec des mécaniques interactives et une expérience utilisateur optimisée pour un jeune public.
             \end{highlights}
         \end{onecolentry}
-    \section{Education}
+    \section{Formation}
 
 
 
@@ -331,72 +332,23 @@
 
 
     
-    \section{Projects}
-
-
-
-        
-        \begin{twocolentry}{
-            \href{https://github.com/sinaatalay/rendercv}{github.com/name/repo}
-        }
-            \textbf{Multi-User Drawing Tool}\end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Developed an electronic classroom where multiple users can simultaneously view and draw on a "chalkboard" with each person's edits synchronized
-                \item Tools Used: C++, MFC
-            \end{highlights}
-        \end{onecolentry}
-
-
-        \vspace{0.2 cm}
-
-        \begin{twocolentry}{
-            \href{https://github.com/sinaatalay/rendercv}{github.com/name/repo}
-        }
-            \textbf{Synchronized Desktop Calendar}\end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Developed a desktop calendar with globally shared and synchronized calendars, allowing users to schedule meetings with other users
-                \item Tools Used: C\#, .NET, SQL, XML
-            \end{highlights}
-        \end{onecolentry}
-
-
-        \vspace{0.2 cm}
-
-        \begin{twocolentry}{
-            2002
-        }
-            \textbf{Custom Operating System}\end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Built a UNIX-style OS with a scheduler, file system, text editor, and calculator
-                \item Tools Used: C
-            \end{highlights}
-        \end{onecolentry}
-
-
-
-    
-    \section{Skills}
+    \section{Compétences}
 
 
 
         
         \begin{onecolentry}
-            \textbf{Languages:} C++, C, Java, Objective-C, C\#, SQL, JavaScript
-        \end{onecolentry}
+            \textbf{Stack principal:} .NET, React, Next.js, Spring Boot
 
-        \vspace{0.2 cm}
+            \vspace{0.1 cm}
 
-        \begin{onecolentry}
-            \textbf{Technologies:} .NET, Microsoft SQL Server, XCode, Interface Builder
+            \textbf{Ingénierie Data:} Spark, NiFi, Airflow, dbt, Kafka
+
+            \vspace{0.1 cm}
+
+            \textbf{Cloud \& Infrastructure:} AWS, GCP, Docker, Terraform
+
+
         \end{onecolentry}
 
 

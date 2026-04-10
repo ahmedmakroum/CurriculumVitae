@@ -3,10 +3,10 @@
 % Packages:
 \usepackage[
     ignoreheadfoot, % set margins without considering header and footer
-    top=1.2 cm, % seperation between body and page edge from the top
-    bottom=1.2 cm, % seperation between body and page edge from the bottom
-    left=1.2 cm, % seperation between body and page edge from the left
-    right=1.2 cm, % seperation between body and page edge from the right
+    top=0.5 cm, % seperation between body and page edge from the top
+    bottom=1 cm, % seperation between body and page edge from the bottom
+    left=0.8 cm, % seperation between body and page edge from the left
+    right=0.8 cm, % seperation between body and page edge from the right
     footskip=1.0 cm, % seperation between body and footer
     % showframe % for debugging 
 ]{geometry} % for adjusting page geometry
@@ -173,10 +173,6 @@
         \kern 5.0 pt%
         \AND%
         \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{tel:+212 664716219}{06 64 71 62 19}}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
         \mbox{\hrefWithoutArrow{https://makroum.website/}{makroum.website}}%
         \kern 5.0 pt%
         \AND%
@@ -197,7 +193,9 @@
 
         
         \begin{onecolentry}
-            Software engineer with hands-on experience building and maintaining applications and data systems. Worked across backend, frontend, and data pipelines, delivering complete features from design to production. Focused on writing reliable code, keeping systems simple, and shipping work that runs in real conditions.
+            Software engineer building full-stack applications, backend systems, and data pipelines.
+
+            Experience across .NET, React, and modern data engineering tools (Spark, NiFi), delivering end-to-end solutions from architecture to production. Focused on performance, clean system design, and building reliable applications used in real-world environments.
         \end{onecolentry}
 
 
@@ -216,10 +214,10 @@
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-    \item Developed internal applications using .NET (ASP.NET Core) and React to support business and operational workflows.
-    \item Integrated Microsoft Graph APIs for managing users, permissions, and collaborative data.
-    \item Built SPFx web parts (React) within SharePoint, improving access to internal tools for teams.
-    \item Implemented application architectures (REST APIs, authentication, role-based access) to ensure reliability and maintainability..
+    \item Developed full-stack applications using .NET and React to support business workflows and improve operational efficiency.
+    \item Integrated Microsoft Graph APIs to centralize user, permission, and collaboration data across systems.
+    \item Built SPFx web parts (React) within SharePoint, improving accessibility and adoption of internal tools.
+    \item Designed and implemented backend architectures (REST APIs, authentication, role-based access control) ensuring scalability and maintainability.
 
 
 
@@ -238,8 +236,8 @@
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item Designed modular data architectures across GCP, AWS, and on-premise environments, standardizing client deployments and reducing setup time.
-                \item Automated infrastructure with Terraform, removing manual configuration and enabling scalable environment deployments in minutes.
+                \item Designed modular data architectures across AWS, GCP, and on-premise environments, standardizing deployments and reducing setup complexity.
+                \item Automated infrastructure provisioning with Terraform, enabling scalable and reproducible environments in minutes.
 
 
             \end{highlights}
@@ -256,10 +254,10 @@
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-\item Built NiFi + Spark pipelines consolidating multi-source data into a PostgreSQL warehouse (single source of truth).
+\item Built data pipelines (NiFi + Spark) consolidating multi-source data into a centralized PostgreSQL warehouse.
     \item Automated data extraction workflows, reducing report delivery time from hours to minutes.
-    \item Delivered self-service BI dashboards (Metabase), enabling KPI tracking without engineering support.
-    \item Developed a Spring Boot + Next.js microservices app for claims management, used by 50+ daily users.
+    \item Delivered self-service BI dashboards (Metabase), enabling business teams to track KPIs without engineering dependency.
+    \item Developed a microservices-based application (Spring Boot + Next.js) for claims management, used by 50+ daily users.
             \end{highlights}
         \end{onecolentry}
 
@@ -274,9 +272,9 @@
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-\item Built Apache Beam pipelines (GCP) processing GCS logs for accurate user consumption tracking.
-    \item Designed a BigQuery warehouse powering automated per-user billing.
-    \item Delivered real-time finance dashboards (Looker Studio), eliminating manual reporting.
+\item Developed Apache Beam pipelines (GCP) processing large-scale usage data for accurate consumption tracking.
+    \item Designed a BigQuery warehouse supporting automated per-user billing systems.
+    \item Delivered real-time dashboards (Looker Studio), eliminating manual financial reporting.
                 
             \end{highlights}
         \end{onecolentry}
@@ -293,9 +291,9 @@
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-\item Built a multi-service platform (legal, medical, financial) centralizing client interactions.
-    \item Developed Angular + Spring Boot architecture for scalable front/back separation.
-    \item Shipped a Flutter mobile app enabling cross-platform access.
+\item Built a multi-service platform centralizing legal, medical, and financial services.
+    \item Developed scalable frontend/backend architecture using Angular and Spring Boot.
+    \item Delivered a cross-platform mobile application using Flutter.
     
             \end{highlights}
         \end{onecolentry}
@@ -312,8 +310,8 @@
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item Developed an educational game for children, introducing management and strategy concepts through interactive gameplay.
-                \item Built the project in Unity with interactive mechanics, polished animations, and an age-appropriate interface, ensuring an engaging experience for young users.
+                \item Developed an educational game introducing management and strategy concepts through interactive gameplay.
+                \item Built the project in Unity with interactive mechanics and optimized user experience for younger audiences.
             \end{highlights}
         \end{onecolentry}
     \section{Education}
@@ -326,35 +324,28 @@
         }
             \textbf{EMSI – École Marocaine des Sciences de l’Ingénieur}, Master’s degree in Software Engineering and Networks \end{twocolentry}
 
-    \section{Projects}
+   
+
+    \section{Skills}
 
 
-        \vspace{0.2 cm}
 
         
-        \begin{twocolentry}{
-            \href{https://github.com/sinaatalay/rendercv}{github.com/name/repo}
-        }
-            \textbf{Multi-User Drawing Tool}\end{twocolentry}
+        \begin{onecolentry}
+            \textbf{Core Stack:} .NET, React, Next.js, Spring Boot
 
-       
+            \vspace{0.1 cm}
 
-        \vspace{0.2 cm}
+            \textbf{Data Engineering:} Spark, NiFi, Airflow, dbt, Kafka
 
-        \begin{twocolentry}{
-            \href{https://github.com/sinaatalay/rendercv}{github.com/name/repo}
-        }
-            \textbf{Synchronized Desktop Calendar}\end{twocolentry}
+            \vspace{0.1 cm}
 
+            \textbf{Cloud \& Infrastructure:} AWS, GCP, Docker, Terraform
 
+            \vspace{0.1 cm}
 
-
-   \vspace{0.2 cm}
-
-        \begin{twocolentry}{
-            \href{https://github.com/sinaatalay/rendercv}{github.com/name/repo}
-        }
-            \textbf{Synchronized Desktop Calendar}\end{twocolentry}
+            \textbf{Databases:} PostgreSQL, MongoDB, Cassandra, Hive
+        \end{onecolentry}
 
 
 
@@ -363,3 +354,4 @@
     
 
 \end{document}
+
